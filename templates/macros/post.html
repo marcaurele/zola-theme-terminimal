@@ -65,7 +65,12 @@
 
 
 {% macro header(page) %}
+{% set title_array = page.title | split(pat=" ") %}
+{% if title_array | length > 1 %}
+    <h1 class="post-title"><a href="{{ page.permalink | safe }}">{{ title_array[0] }} <em>{{ title_array[1] }}</em> {{ title_array | slice(start=2) | join(sep=" ") }}</a></h1>
+{% else %}
     <h1 class="post-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h1>
+{% endif %}
     <div class="post-meta-inline">
         {{ post_macros::date(page=page) }}
     </div>

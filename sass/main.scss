@@ -13,7 +13,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: Hack, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
+  font-family: "JetBrains Mono", "JetBrains Mono Fallback", "JetBrains Mono", monospace;
   font-size: 1rem;
   line-height: 1.54;
   background-color: var(--background);
@@ -33,6 +33,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   font-weight: bold;
   line-height: 1.3;
+  font-family: "Instrument Serif", "Instrument Serif Fallback", Georgia, serif;
 }
 
 h1 {

@@ -43,6 +43,11 @@
     padding-bottom: 15px;
     border-bottom: var(--border);
     font-weight: normal;
+    font-size: 3rem;
+
+    em {
+        color: var(--accent-alpha-70);
+    }
 
     a {
       text-decoration: none;
